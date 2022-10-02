@@ -2,21 +2,13 @@ package e4;
 
 public class Main {
     public static void main(String[] args) {
-        Weapon weapon = new Weapon(4);
 
-        weapon.loadBullet("1");
-        weapon.loadBullet("2");
-        weapon.loadBullet("3");
-//        weapon.loadBullet("4");
-//        weapon.loadBullet("5");
-//        weapon.loadBullet("6");
-//        weapon.loadBullet("7");
-
-        weapon.shot();
-        weapon.shot();
-        weapon.shot();
-        weapon.shot();
-        weapon.shot();
-
+        ParcelValidator validator = new ParcelValidator();
+        Parcel parcel = new Parcel(200,100,50, 25.0f, true);
+        Parcel parcel1 = new Parcel(20,30,40,10.0f, false);
+        Parcel parcel2 = new Parcel(40, 40, 40, 14.0f, true);
+        System.out.println(validator.validate(parcel));
+        System.out.println(validator.validate(parcel2));
     }
+
 }
