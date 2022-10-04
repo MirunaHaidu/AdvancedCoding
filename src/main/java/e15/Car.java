@@ -11,8 +11,8 @@ public enum Car {
     FIAT(10000, 170),
     TOYOTA(7000, 150);
 
-    private int price;
-    private int power;
+    private final int price;
+    private final int power;
 
     Car(int price, int power) {
         this.price = price;
