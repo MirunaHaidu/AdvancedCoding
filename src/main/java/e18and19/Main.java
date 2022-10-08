@@ -1,4 +1,4 @@
-package e18;
+package e18and19;
 
 public class Main {
     public static void main(String[] args) {

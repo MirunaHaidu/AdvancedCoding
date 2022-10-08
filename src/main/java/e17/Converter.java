@@ -1,7 +1,5 @@
 package e17;
 
-public class Converter {
-    private float tempIn;
-
-
+public interface Converter {
+    float convert(float distance);
 }
