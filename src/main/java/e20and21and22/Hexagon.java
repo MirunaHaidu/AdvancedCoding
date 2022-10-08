@@ -1,4 +1,4 @@
-package e20;
+package e20and21and22;
 
 public class Hexagon extends Shape {
 

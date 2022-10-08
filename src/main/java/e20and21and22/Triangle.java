@@ -1,6 +1,4 @@
-package e20;
-
-import java.util.Map;
+package e20and21and22;
 
 public class Triangle extends Shape {
     private float sideA;
