@@ -12,7 +12,7 @@ public class Main {
         System.out.println(zoo.getNumberOfAnimals());
 
         System.out.println(zoo.getAnimalsCount());
-        System.out.println(zoo.getAnimalsCountSorted());
+//        System.out.println(zoo.getAnimalsCountSorted());
 
     }
 }
