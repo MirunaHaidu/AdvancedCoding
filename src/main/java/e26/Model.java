@@ -10,8 +10,6 @@ public class Model {
 
 
 
-
-
     public Model(String name, int productionStartYear, List<Car> cars) {
         this.name = name;
         this.productionStartYear = productionStartYear;

@@ -5,6 +5,6 @@ public class Main {
         Joiner<String> joiner = new Joiner<>(" ");
 
 
-        System.out.println(joiner.join("Hello", "world"));
+//        System.out.println(joiner.join("Hello", "world"));
     }
 }

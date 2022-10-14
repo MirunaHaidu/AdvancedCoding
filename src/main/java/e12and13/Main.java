@@ -5,9 +5,9 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
 
-        Manufacturer manufacturer = new Manufacturer("Volvo", "1918", "Sweden");
-        Manufacturer manufacturer1 = new Manufacturer("Audi", "1920", "Germany");
-        Manufacturer manufacturer2 = new Manufacturer("Ferrari", "1855", "Italy");
+        Manufacturer manufacturer = new Manufacturer("Volvo", 1918, "Sweden");
+        Manufacturer manufacturer1 = new Manufacturer("Audi", 1920, "Germany");
+        Manufacturer manufacturer2 = new Manufacturer("Ferrari", 1855, "Italy");
 
         Car car = new Car("Volkswagen", "automatic", 5000, 2015,
                 List.of(manufacturer1), EngineType.S6);
@@ -24,24 +24,28 @@ public class Main {
         carService.addCars(List.of(car, car1, car2, car3));
 
 
-
+        System.out.println("3---------------------------------------");
         System.out.println(carService.getAllCars());
-        System.out.println("---------------------------------------");
+        System.out.println("4---------------------------------------");
         System.out.println(carService.getV12Cars());
-        System.out.println("---------------------------------------");
+        System.out.println("5---------------------------------------");
         System.out.println(carService.getManufacturerYearBefore1999());
-        System.out.println("---------------------------------------");
+        System.out.println("6---------------------------------------");
         System.out.println(carService.getMostExpensiveCar());
-        System.out.println("---------------------------------------");
+        System.out.println("7---------------------------------------");
         System.out.println(carService.getCheapestCar());
-        System.out.println("---------------------------------------");
+        System.out.println("8---------------------------------------");
         System.out.println(carService.getCarWithAtLeastThreeManufacturers());
-        System.out.println("---------------------------------------");
-//        System.out.println(carService.sortAllCars());
-        System.out.println("---------------------------------------");
+        System.out.println("9---------------------------------------");
+        System.out.println(carService.sortAllCars("descending"));
+        System.out.println("10---------------------------------------");
         System.out.println(carService.checkForCar(car4));
-        System.out.println("---------------------------------------");
+        System.out.println("11---------------------------------------");
         System.out.println(carService.getCarsByManufacturer(manufacturer1));
+        System.out.println("12---------------------------------------");
+        System.out.println(carService.getCarsByManufacturerSign("=", 1999));
+
+
 
 
 

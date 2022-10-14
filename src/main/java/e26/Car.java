@@ -1,13 +1,10 @@
 package e26;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Car {
     public String name;
     public String description;
     public CarType carType;
-
+    
 
 
 
@@ -16,6 +13,8 @@ public class Car {
         this.description = description;
         this.carType = carType;
     }
+
+
 
 
 

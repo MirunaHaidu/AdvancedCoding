@@ -4,10 +4,10 @@ import java.util.Objects;
 
 public class Manufacturer {
     private String name;
-    private String yearOfEstablishment;
+    private int yearOfEstablishment;
     private String country;
 
-    public Manufacturer(String name, String yearOfEstablishment, String country) {
+    public Manufacturer(String name, int yearOfEstablishment, String country) {
         this.name = name;
         this.yearOfEstablishment = yearOfEstablishment;
         this.country = country;
@@ -21,11 +21,11 @@ public class Manufacturer {
         this.name = name;
     }
 
-    public String getYearOfEstablishment() {
+    public int getYearOfEstablishment() {
         return yearOfEstablishment;
     }
 
-    public void setYearOfEstablishment(String yearOfEstablishment) {
+    public void setYearOfEstablishment(int yearOfEstablishment) {
         this.yearOfEstablishment = yearOfEstablishment;
     }
 
@@ -42,7 +42,7 @@ public class Manufacturer {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Manufacturer that = (Manufacturer) o;
-        return name.equals(that.name) && yearOfEstablishment.equals(that.yearOfEstablishment) && country.equals(that.country);
+        return name.equals(that.name) && yearOfEstablishment == that.yearOfEstablishment && country.equals(that.country);
     }
 
     @Override

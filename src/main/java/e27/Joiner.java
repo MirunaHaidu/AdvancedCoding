@@ -1,5 +1,6 @@
 package e27;
 
+import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -13,7 +14,8 @@ public class Joiner<T> {
 
 
 
-    public String join(T... items) {
-        return separator.toString().concat(items.toString());
-    }
+//    public String join(T... items) {
+//
+//
+//    }
 }

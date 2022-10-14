@@ -21,13 +21,15 @@ public class Zoo {
         Map<String, Integer> animalsBySpecies = new HashMap<>();
         for (String animal : animals) {
             Integer number = animalsBySpecies.get(animal);
-            animalsBySpecies.put(animal, (number == null) ? 1 : number + 1);
+            animalsBySpecies.put(animal, (number == null) ? 1 : ++number);
         }
         return animalsBySpecies;
     }
-//    public Map <String, Integer> getAnimalsCountSorted(){
-//
-//    }
+    public Map <String, Integer> getAnimalsCountSorted(){
+        return getAnimalsCount().entrySet().stream()
+                .sorted(Comparator.comparingInt(Map.Entry::getValue))
+                .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue, (a,b)->b, LinkedHashMap::new));
+    }
 
 
 
